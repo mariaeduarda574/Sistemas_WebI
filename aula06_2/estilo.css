@@ -14,3 +14,14 @@ body{
 .cor1{
     background-color:#87CEEB ;
 }
+.lista {
+  list-style: none;
+}
+.cor2{
+    background-color: 	#87CEEB;
+    color: rgb(255, 255, 255);
+}
+.botcor{
+    color: #fff;
+    background: #0d22f3
+}
