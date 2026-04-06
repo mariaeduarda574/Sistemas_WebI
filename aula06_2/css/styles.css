@@ -8130,10 +8130,10 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-/* .bg-secondary {
+.bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgb(17 128 239) !important;
-} */
+  background-color: #4682B4 !important;
+}
 
 .bg-success {
   --bs-bg-opacity: 1;
