@@ -60,12 +60,14 @@
             </div>
     </nav>
     <div class="res">
-        <h2 class="mb-4"> Área Restrita</h2>
+        <h1 class="mb-4"> Área Restrita</h1>
             <div class="typewriter">
-                <p>Bem vindo <?php echo $nome; ?> a sua área restrita!</p>
+                <h3>Bem vindo <?php echo $nome; ?> a sua área restrita!!</h3>
             </div>
             <a href = "index.html" class="btn btn-primary">Voltar</a>
     </div>
+    
+        
 
      
    
