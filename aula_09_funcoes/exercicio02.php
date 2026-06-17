@@ -1,7 +1,7 @@
-<?php
-    function acionarCenaNoturna(){
-        echo "Luzes Zigbee apagadas, persianas fechadas e alarme ativado.";
+<?php 
+    function movimentarMotor($graus){
+        echo "Movendo o servo motor para $graus graus.";
     }
 
-    acionarCenaNoturna();
+    movimentarMotor(90);
 ?>
