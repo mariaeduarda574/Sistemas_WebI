@@ -35,19 +35,59 @@ Turma com bom desempenho!
 Turma precisa melhorar. -->
 
 <?php
-    $nota = [8.5, 6.0, 4.5, 9.0, 7.2, 5.5, 3.8, 10.0, 6.8, 4.9];
 
     function classificarAluno($nota){
         if ($nota >= 7 ) {
             return "Aprovado";
-        } else {
-            if ($nota >= 5 && $nota< 7) {
-                return "Recuperão";
+        } else{
+            if ($nota >= 5) {
+                return "Recuperação";
             } else {
                return "Reprovado";
             } 
         }  
     }
 
-    
+    $notas = [8.5, 6.0, 4.5, 9.0, 7.2, 5.5, 3.8, 10.0, 6.8, 4.9];
+
+    $aprovados = 0;
+    $recuperacao = 0;
+    $reprovados = 0;
+    $soma = 0;
+
+    for ($i=0; $i < count($notas) ; $i++){ 
+       $situacao = classificarAluno($notas[$i]);
+       echo "Aluno " . ($i + 1) . ": Nota = " . $notas[$i] . " -> " . $situacao . "<br>";
+
+       if ($situacao == "Aprovado") {
+        $aprovados++;
+       } elseif ($situacao =="Recuperação") {
+        $recuperacao++;
+       } 
+       else{
+        $reprovados++;
+       }
+       
+       $soma += $notas[$i];
+
+       
+    }
+
+    $media = $soma / count($notas);
+
+    echo "<br>Resumo da turma:<br>";
+
+    echo "Aprovados: $aprovados <br>";
+    echo "Recuperação: $recuperacao <br>";
+    echo "Reprovados: $reprovados <br>";
+
+    echo "Média da turma: " . number_format($media, 2) . "<br>";
+
+    if ($media >= 7) {
+        echo "Turma com bom desempenho!";
+    }
+    else {
+        echo "Turma precisa melhorar.";
+    }
+
 ?>
